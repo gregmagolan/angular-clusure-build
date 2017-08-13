@@ -1,0 +1,31 @@
+{
+  "name": "trellis",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@angular/animations": "^4.3.4",
+    "@angular/common": "^4.3.4",
+    "@angular/compiler": "^4.3.4",
+    "@angular/compiler-cli": "^4.3.4",
+    "@angular/core": "^4.3.4",
+    "@angular/http": "^4.3.4",
+    "@angular/platform-browser": "^4.3.4",
+    "@angular/router": "^4.3.4",
+    "@angular/tsc-wrapped": "^4.3.4",
+    "clang-format": "^1.0.53",
+    "google-closure-compiler": "20170409.0.0",
+    "lite-server": "^2.3.0",
+    "rxjs": "^5.4.3",
+    "source-map-explorer": "^1.4.0",
+    "typescript": "^2.4.2",
+    "zone.js": "^0.8.16"
+  },
+  "scripts": {
+    "build": "ngc -p src && yarn run closure && ./brotli.sh",
+    "format": "clang-format --glob='{{src,test}/**/,}*.{js,ts}' -i",
+    "format:enforce": "clang-format --glob='{{src}/**/,}*.{js,ts}' -output-replacements-xml | grep -c offset | grep 0",
+    "closure": "java -jar node_modules/google-closure-compiler/compiler.jar --flagfile closure.conf",
+    "closure-debug": "java -jar node_modules/google-closure-compiler/compiler.jar --flagfile closure.conf --debug --formatting PRETTY_PRINT",
+    "serve": "lite-server -c test/browser.config.json",
+    "explore": "source-map-explorer dist/bundle.js dist/bundle.js.map"
+  }
+}

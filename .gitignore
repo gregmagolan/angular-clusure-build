@@ -1,0 +1,7 @@
+node_modules
+build
+dist
+**/*.ngfactory.ts
+**/*.ngsummary.json
+npm-debug.log
+src/aot
