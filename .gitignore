@@ -3,5 +3,6 @@ build
 dist
 **/*.ngfactory.ts
 **/*.ngsummary.json
+**/*.shim.ngstyle.ts
 npm-debug.log
-src/aot
+src/ngfactory

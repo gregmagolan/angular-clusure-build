@@ -1,28 +1,19 @@
 {
-  "angularCompilerOptions": {
-    "annotationsAs": "static fields",
-    "annotateForClosureCompiler": true,
-    "alwaysCompileGeneratedCode": true,
-    "genDir": "aot",
-    "skipMetadataEmit" : false
-  },
   "compilerOptions": {
-    "module": "es2015",
+    "target": "es5",
+    "lib": ["es2017", "dom"],
+    "module": "commonjs",
     "moduleResolution": "node",
-    "target": "es6",
-    "declaration": true,
-
     "baseUrl": "./src",
-    "outDir": "../build",
     "typeRoots": [
       "node_modules/@types"
     ],
-
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
     "pretty": true,
+    "version": true,
 
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
@@ -30,11 +21,5 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true
-  },
-  "exclude": [
-    "vendor",
-    "node_modules",
-    "built",
-    "dist"
-  ]
+  }
 }

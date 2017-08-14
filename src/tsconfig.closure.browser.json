@@ -1,0 +1,43 @@
+{
+  "angularCompilerOptions": {
+    "annotationsAs": "static fields",
+    "annotateForClosureCompiler": true,
+    "alwaysCompileGeneratedCode": true,
+    "genDir": "ngfactory",
+    "skipMetadataEmit" : false,
+    "entryModule": "./app/browser-app.module#BrowserAppModule"
+  },
+  "compilerOptions": {
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es6",
+    "declaration": true,
+
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "pretty": true,
+
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    "baseUrl": "./",
+    "outDir": "../build/browser",
+    "typeRoots": [
+      "../node_modules/@types"
+    ]
+  },
+  "exclude": [
+    "./main.server.ts",
+    "./app/server-app.module.ts",
+    "./ngfactory/app/server-app.module.ngfactory.ts",
+    "./server-engine.ts",
+    "./server-polyfills.ts",
+    "./server-universal.ts"
+  ]
+}
