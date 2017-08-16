@@ -38,7 +38,7 @@
     "build:browser:closure-debug": "java -jar node_modules/google-closure-compiler/compiler.jar --flagfile closure.conf --debug --formatting PRETTY_PRINT",
     "build:server": "yarn run build:server:bazel",
     "build:server:bazel": "bazel build ng_libs && bazel build src",
-    "build:dist": "cp src/index.html dist && cp node_modules/zone.js/dist/zone.min.js dist && ./compress.sh && cp -r dist bazel-bin",
+    "build:dist": "cp src/index.html dist && ./compress.sh && cp -r dist bazel-bin",
     "format": "clang-format --glob='{src/**/,}*.{js,ts}' -i",
     "format:enforce": "clang-format --glob='{src/**/,}*.{js,ts}' -output-replacements-xml | grep -c offset | grep 0",
     "serve": "node ./bazel-bin/src/main.server.js",

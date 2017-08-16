@@ -11,7 +11,7 @@ run_brotli() {
 }
 
 # measure the sizes of scripts the user will need to load
-for script in dist/browser.js dist/zone.min.js; do
+for script in dist/browser.js; do
   cp $script $script.bak
   # gzip on linux doesn't have --keep
   gzip -f $script

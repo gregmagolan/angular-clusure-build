@@ -13,10 +13,8 @@ Bazel build configuration is based off of https://github.com/alexeagle/angular-b
 This includes @angular/forms (which is why it is larger than the @angular/closure-demo).
 
 ```
-35028 16 Aug 00:55 dist/browser.js.brotli
-39476 16 Aug 00:55 dist/browser.js.gz
-10887 16 Aug 00:55 dist/zone.min.js.brotli
-11894 16 Aug 00:55 dist/zone.min.js.gz
+45014 16 Aug 02:43 dist/browser.js.brotli
+50723 16 Aug 02:43 dist/browser.js.gz
 ```
 
 # Try it
