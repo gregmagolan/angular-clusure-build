@@ -27,17 +27,9 @@
     "noUnusedParameters": true,
 
     "baseUrl": "./",
-    "outDir": "../build/browser",
+    "outDir": "../closure-build",
     "typeRoots": [
       "../node_modules/@types"
     ]
-  },
-  "exclude": [
-    "./main.server.ts",
-    "./app/server-app.module.ts",
-    "./ngfactory/app/server-app.module.ngfactory.ts",
-    "./server-engine.ts",
-    "./server-polyfills.ts",
-    "./server-universal.ts"
-  ]
+  }
 }

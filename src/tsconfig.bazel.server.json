@@ -1,25 +1,27 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["es2017", "dom"],
     "module": "commonjs",
     "moduleResolution": "node",
-    "baseUrl": "./src",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "target": "es5",
+    "lib": ["es2017", "dom"],
+    "declaration": true,
+
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "removeComments": false,
+    "removeComments": true,
     "pretty": true,
-    "version": true,
 
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "noUnusedParameters": true,
+
+    "baseUrl": "./",
+    "typeRoots": [
+      "../node_modules/@types"
+    ]
   }
 }

@@ -1,6 +1,7 @@
 node_modules
-build
+closure-build
 dist
+bazel-*
 **/*.ngfactory.ts
 **/*.ngsummary.json
 **/*.shim.ngstyle.ts
