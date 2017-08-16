@@ -1,4 +1,5 @@
-import './server-polyfills';
+import 'reflect-metadata';
+import 'zone.js';
 
 import {enableProdMode} from '@angular/core';
 import {ServerAppModuleNgFactory} from './ngfactory/app/server-app.module.ngfactory';
